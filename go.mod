@@ -1,4 +1,5 @@
-module github.com/razonyang/hugo-theme-bootstrap-skeleton
+module github.com/mcncyo/computerhacking-hugo-new
+
 
 go 1.18
 
