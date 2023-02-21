@@ -1,13 +1,12 @@
 mainSections:
   - blog
-  - posts
-  - news
+  - docs
+
 
 # titleSeparator: '|' # Title separator. Default to -.
 
-description: An extreme fast, responsive and feature-rich blog theme for Hugo
-keywords: Hugo, Bootstrap, Blog Theme
-# images:
+description:  A place to learn how to make your computer work for you 
+keywords: computers, windows, linux
 #   - site-feature-image.jpg
 
 # metaRobots: noindex, nofollow # Default value for Meta Tag robots
@@ -52,10 +51,10 @@ googleAdsense:
 # socialShare: false # disable social network sharing
 # searchBar: false # disable search-bar
 
-# poweredBy: false # Whether to show powered by.
+ poweredBy: false # Whether to show powered by.
 
-# readingTime: false # Whether to display the reading time.
-# postDate: false # Whether to display the post date in the post meta section.
+#readingTime: false # Whether to display the reading time.
+ postDate: false # Whether to display the post date in the post meta section.
 
 # featuredPostCount: 10 # The number of featured posts shown in sidebar. Turn off by setting it to false.
 # recentPostCount: 10 # The number of recent posts shown in sidebar. Turn off by setting it to false.
@@ -246,20 +245,17 @@ contact:
   # reCaptcha:
     # siteKey: ""
 
-repo:
-  url: https://github.com/razonyang/hugo-theme-bootstrap-skeleton
-  branch: main
-  # subPath: exampleSite
-  # dateFormat: 02/01/2006, 15:04:05 PM
+
 
 topAppBar:
   # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
   social:
-    github: razonyang/hugo-theme-bootstrap
-    patreon: razonyang
-    paypal: razonyang
+    patreon: Computerhacking101  
+    paypal: mcncyo
+    dockerhub: mcncyo
 
-#docs:
+
+docs:
   # nav:
     # expand: true # Expand docs navigations.
 

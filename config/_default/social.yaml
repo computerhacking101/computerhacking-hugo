@@ -1,34 +1,20 @@
 # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
-email: user@domain.tld
-facebook: yourfacebookusername
-github: razonyang/hugo-theme-bootstrap
-gitlab: yourgitlabusername
-linkedin: yourlinkedinusername
-xing: yourxingusername
-stackoverflow: yourstackoverflowuserid
+
 twitter: yourtwitterusername
-weibo: yourweibousername
-zhihu: yourzhihuusername
-instagram: yourinstagramusername
-quora: yourquorausername
-tumblr: yourtumblrusername
+#weibo: yourweibousername
+#zhihu: yourzhihuusername
 reddit: yourredditusername
-telegram: yourtelegramusername
-qq: yourqqnumber
+#telegram: yourtelegramusername
 dockerhub: yourdockerhubusername
-bitbucket: yourbitbucketworkspaceid
-kaggle: yourkaggleusername
 medium: yourmediumusername # Medium username or custom domain(e.g. https://custom.domain.tld).
-lastfm: yourlastfmusername
 bilibili: yourbilibiliuserid
-youtube: youryoutubechannelid
+youtube: UCWbsbHA8HwFB1eBf-XQh6Zw
 discord: yourdiscordinvitecode
 discourse: https://yourforum.tld
 facebookgroup: yourfacebookgroupname
-tiktok: yourtiktokusername
+
 pinterest: yourpinterestusername
 mastodon: yourmastodonusername
-liberapay: yourliberapayaccount
-paypal: razonyang
-patreon: razonyang
-tipeee: yourtipeeeaccount-fr
+paypal: mcncyo@gmail.com
+patreon: computerhacking101
+
