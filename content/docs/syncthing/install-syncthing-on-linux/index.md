@@ -24,7 +24,7 @@ aliases:
 ---
 {{< youtube _PXNxpdAvJM >}}
 
-## Step 1 add Syncthing repo to apt sources.
+## Step 1 add Syncthing repo to apt sources
 
 Syncthing isn’t available to install using the default repo. So the first step is adding syncthing repo to our apt sources so we can install it on our computer. We need to open up a terminal and run the following command.
 
@@ -32,7 +32,7 @@ Syncthing isn’t available to install using the default repo. So the first step
 echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 ```
 
-{{< image src="/images/syncthingonlinux/addingsyncthing-repo.png">}}
+![Center](addingsyncthing-repo.webp#center)
 
 ## Step 2 Installing curl
 
@@ -44,11 +44,11 @@ sudo apt install curl
 
 If it is already installed, you will get this message
 
-{{< image src="/images/syncthingonlinux/ifcurlinstall.png">}}
+![Center](ifcurlinstall.webp#center)
 
 If you need to install it, your screen will look like this one.
 
-{{< image src="/images/syncthingonlinux/installing-curl.png">}}
+![Center](installing-curl.webp#center)
 
 ## Step 3 – Add syncthing's PGP Keys
 
@@ -60,7 +60,7 @@ curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 
 You should see the following if you added it correctly.
 
-{{< image src="/images/syncthingonlinux/adding-syncthing-apt-key.png">}}
+![Center](adding-syncthing-apt-key.webp#center)
 
 ## Step 4 – Update apt’s database
 
@@ -70,7 +70,7 @@ We need to update the download package information from synching and your other 
 sudo apt update
 ```
 
-{{< image src="/images/syncthingonlinux/running-sudo-apt-update.png">}}
+![Center](running-sudo-apt-update.webp#center)
 
 ## Step 5 – Installing Syncthing
 
@@ -80,7 +80,7 @@ We finally get to install Syncthing on Linux. We just need to type the command b
 sudo apt install syncthing
 ```
 
-{{< image src="/images/syncthingonlinux/install-syncthing.png">}}
+![Center](install-syncthing.webp#center)
 
 ## Step 6 – Enable the Syncthing service
 
@@ -90,7 +90,7 @@ Now we got syncthing installed; we need to enable syncthing to start at boot usi
 sudo systemctl enable syncthing@username.service
 ```
 
-{{< image src="/images/syncthingonlinux/enable-syncthing.png">}}
+![Center](enable-syncthing.webp#center)
 
 ## Step 7 – Start syncthing service up
 
@@ -100,7 +100,7 @@ Let’s start syncthing up for the first time by running this command below. Mak
 sudo systemctl start syncthing@username.service
 ```
 
-{{< image src="/images/syncthingonlinux/adding-syncthing-apt-key.png">}}
+![Center](adding-syncthing-apt-key.webp#center)
 
 ## (Optional) setting syncthing so you can remotely connect to it
 
@@ -110,11 +110,10 @@ If you want to configure syncthing from another computer, you must change one li
 sudo pico .config/syncthing/config.xml
 ```
 
-{{< image src="/images/syncthingonlinux/picoconfig.png">}}
+![Center](picoconfig.webp#center)
 
 Need to find 127.0.0.1:8384 It is under the <gui enabled=true” tls=”false” debuging=”false”>. We need to change it from 127.0.0.1:8384 to 0.0.0.0:8384
-
-{{< image src="/images/syncthingonlinux/changeipaddress.png">}}
+![Center](changeipaddress.webp#center)
 
 Then we need to restart the syncthing service by running this command. Make sure you change the username to your username again
 

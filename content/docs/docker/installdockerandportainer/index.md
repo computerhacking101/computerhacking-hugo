@@ -78,7 +78,7 @@ This command will download the Portainer image and run a container based on that
 
 ## Accessing Portainer
 
-Once the Portainer container is running, we can access the Portainer web interface by opening a web browser and navigating to <http://{server-ip}:9000>. We should see the Portainer login screen.
+Once the Portainer container is running, we can access the Portainer web interface by opening a web browser and navigating to <http://your_server_ip:9000>. We should see the Portainer login screen.
 
 ## Conclusion
 
