@@ -9,7 +9,7 @@ params: {
 # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
 social:
 
-  github: razonyang/hugo-theme-bootstrap
-  twitter: razonyang
-  paypal: razonyang
+  github: mcncyop
+  twitter: mcncyo
+  paypal: mcncyo
   rss: "" # Remove RSS
