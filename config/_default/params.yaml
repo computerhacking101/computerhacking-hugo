@@ -17,7 +17,7 @@ keywords: computers, windows, linux
 # logo: false # Disable Logo
 brand: CH101
 
-palette: purple # Default palette. Optional. You'll need to clear the browser cache after modifying this.
+palette: red # Default palette. Optional. You'll need to clear the browser cache after modifying this.
 # Available palettes. Default to ALL. Empty array means disable.
 # palettes:
 #  - blue
@@ -40,6 +40,8 @@ palette: purple # Default palette. Optional. You'll need to clear the browser ca
 
 dateFormat: Jan 2, 2006
 
+enableGitInfo: true
+
 # Google Adsense
 googleAdsense: 
 
@@ -54,7 +56,7 @@ googleAdsense:
 
 poweredBy: false # Whether to show powered by.
 readingTime: True # Whether to display the reading time.
-postDate: false # Whether to display the post date in the post meta section.
+postDate: True # Whether to display the post date in the post meta section.
 
 # featuredPostCount: 10 # The number of featured posts shown in sidebar. Turn off by setting it to false.
 # recentPostCount: 10 # The number of recent posts shown in sidebar. Turn off by setting it to false.
@@ -201,9 +203,9 @@ search:
   # indexName: ""
   # debug: true
 
-reward:
-  alipay: images/reward/alipay.png
-  wechat: images/reward/wechat.png
+#reward:
+  #alipay: images/reward/alipay.png
+  #wechat: images/reward/wechat.png
   #paypal: images/reward/paypal.png
   #patreon: images/reward/patreon.png
   #liberapay: images/reward/liberapay.png
@@ -253,7 +255,6 @@ topAppBar:
     patreon: Computerhacking101  
     paypal: mcncyo
     dockerhub: mcncyo
-
 
 docs:
   nav:
