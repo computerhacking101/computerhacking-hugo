@@ -1,4 +1,5 @@
 main:
+
   - name: Blog
     identifier: blog
     params:
