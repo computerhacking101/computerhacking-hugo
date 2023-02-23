@@ -9,7 +9,7 @@ params: {
 # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
 social:
 
-  github: mcncyop
+  github: mcncyo
   twitter: mcncyo
   paypal: mcncyo
   rss: "" # Remove RSS
