@@ -2,18 +2,11 @@
 title: "How to Turn Off Microsoft Spying and Protect Your Privacy"
 url: /docs/windows/turn_off_microsoft_spying
 #image: "images/syncwindows/installsyncthingonwindows.png"
-date:
-    - date
-    - publishDate
-    - lastmod
-lastmod:
- - lastmod
- - :git
- - date
- - publishDate
+date: 2023-02-14T19:54:29
+lastmod: 2023-02-22T19:54:29
 draft: false
 author: "Chris Allen"
-categories: ["windows"]
+categories: ["windows", "Microsoft"]
 description: "we will show you a few ways of stopping microsoft from spying on your activites"
 ---
 

@@ -2,18 +2,12 @@
 title: "Install docker, Docker Compose, and portainer"
 url: /docs/docker/install-docker-compose-portainer
 image: "images/docker/InstallDockerPortainer/installdockerportainer.png"
-date:
-    - date
-    - publishDate
-    - lastmod
-lastmod:
- - lastmod
- - :git
- - date
- - publishDate
+date: 2023-02-14T19:54:29
+lastmod: 2023-02-22T19:54:29
+
 draft: false
 author: "Chris Allen"
-categories: ["docker", "portainer"]
+categories: ["docker", "portainer", "Linux"]
 description: "We will show you how to install docker, docker compose and portainer on your Linux server"
 ---
 

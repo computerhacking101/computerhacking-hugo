@@ -2,15 +2,8 @@
 title: "Install Syncthing on Windows"
 url: /docs/syncthing/installing-syncthing-on-windows
 image: "images/syncwindows/installsyncthingonwindows.png"
-date:
-    - date
-    - publishDate
-    - lastmod
-lastmod:
- - lastmod
- - :git
- - date
- - publishDate
+date: 2022-02-22T19:54:29
+lastmod: 2023-02-22T19:54:29
 
 draft: false
 author: "Chris Allen"

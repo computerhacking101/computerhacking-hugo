@@ -1,15 +1,9 @@
 ---
 title: Install Syncthing on Linux
 url: "/docs/syncthing/installing-syncthing-on-linux"
-date:
-- date
-- publishDate
-- lastmod
-lastmod:
-- lastmod
-- ":git"
-- date
-- publishDate
+date: 2022-02-02T19:54:29
+lastmod: 2023-02-22T19:54:29
+
 image: images/syncthingonlinux/installsyncthingonlinux.png
 author: Chris Allen
 categories:
