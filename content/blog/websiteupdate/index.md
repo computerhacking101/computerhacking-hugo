@@ -2,15 +2,8 @@
 ---
 title: "Feb 15, 2023, update"
 url: /blog/feb152023update
-date:
-    - date
-    - publishDate
-    - lastmod
-lastmod:
-    - lastmod 
-    - :git 
-    - date
-    - publishDate
+date:  2023-02-15T19:54:29
+
 draft: false
 author: "Chris Allen"
 description: "An update about what is going on with the channel and website"

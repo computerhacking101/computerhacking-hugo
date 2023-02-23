@@ -2,16 +2,8 @@
 
 title: "First blog post"
 url: /blog/first-blog-post
-date:
-    - date
-    - publishDate
-    - lastmod
-lastmod:
- - lastmod
- - :git
- - date
- - publishDate
-draft: false
+date: 2021-09-15T19:54:29
+
 author: "Chris Allen"
 
 ---

@@ -4,15 +4,8 @@ title: "We change the theme with other updates"
 url: /blog/change_theme_other_updates
 draft: false
 author: "Chris Allen"
-date:
-    - date
-    - publishDate
-    - lastmod
-lastmod:
-    - lastmod
-    - :git
-    - date
-    - publishDate
+date: 2022-10-27T19:54:29
+
 
 
 ---
