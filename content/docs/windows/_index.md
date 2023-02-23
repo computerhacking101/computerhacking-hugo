@@ -1,5 +1,5 @@
 ---
-title: "Computer hacking 101's docs about Windows"
+title: "Windows"
 image: ""
 date:
     - date
