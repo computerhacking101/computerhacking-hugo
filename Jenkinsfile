@@ -4,6 +4,11 @@ node {
     def portainerApiUrl = 'https://myportainer.chrisallen.us/api/endpoints'
     def imageName = 'computerhakcing101/computerhacking101website'
 
+     // Set environment variables using credentials stored in Jenkins
+    environment {
+        PORTAINER_API_TOKEN = credentials('portainer-api-token')
+    }
+
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
 
