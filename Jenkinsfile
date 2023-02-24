@@ -42,7 +42,7 @@ node {
         
             script {
                 // Retrieve the Portainer API token from the environment variables
-                def portainerApiToken = sh(script: "echo ${PORTAINER_API_TOKEN}", returnStdout: true).trim()
+                // def portainerApiToken = sh(script: "echo ${PORTAINER_API_TOKEN}", returnStdout: true).trim()
                     
                  // Define the request body for the API call
                 def requestBody = [action: 'recreate']
@@ -51,7 +51,7 @@ node {
                  sh """
                     curl --request POST \
                         --url ${portainerApiUrl}/1/docker/containers/${containerName}/json \
-                        --header 'Authorization: Bearer ${portainerApiToken}' \
+                        --header 'Authorization: Bearer ptr_p15Tx5Mb97bkDE6sO45ATvTCisP9heWE8Hk4PYS2Y/M=' \
                         --header 'Content-Type: application/json' \
                         --data '${requestBody}'
                     """
