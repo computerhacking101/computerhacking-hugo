@@ -3,10 +3,10 @@ node {
     def app
     def containerName = 'computerhacking101_website'
     def imageName = 'computerhakcing101/computerhacking101website'
+    def portainerApiUrl = "https://myportainer.chrisallen.us/api/endpoints"
 
     // Set environment variables using credentials stored in Jenkins
     environment {
-        PORTAINER_API_URL = credentials('portainer-api-url')
         PORTAINER_API_TOKEN = credentials('portainer-api-token')
     }
 
@@ -33,8 +33,7 @@ node {
         stage('Recreate container') {
             steps {
                 script {
-                    // Retrieve the Portainer API URL and token from the environment variables
-                    def portainerApiUrl = sh(script: "echo ${PORTAINER_API_URL}", returnStdout: true).trim()
+                    // Retrieve the Portainer API token from the environment variables
                     def portainerApiToken = sh(script: "echo ${PORTAINER_API_TOKEN}", returnStdout: true).trim()
                     
                     // Define the request body for the API call
