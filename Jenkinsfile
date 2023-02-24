@@ -7,7 +7,7 @@ node {
      // Set environment variables using credentials stored in Jenkins
     environment {
         // PORTAINER_API_TOKEN = credentials('portainer-api-token')
-        PORTAINER_API_TOKEN = credentials('ptr_p15Tx5Mb97bkDE6sO45ATvTCisP9heWE8Hk4PYS2Y/M=')
+       // PORTAINER_API_TOKEN = credentials('ptr_p15Tx5Mb97bkDE6sO45ATvTCisP9heWE8Hk4PYS2Y/M=')
     }
 
     stage('Clone repository') {
@@ -36,26 +36,4 @@ node {
         }
     }
 
-
-
-    stage('Recreate container') {
-        
-            script {
-                // Retrieve the Portainer API token from the environment variables
-                // def portainerApiToken = sh(script: "echo ${PORTAINER_API_TOKEN}", returnStdout: true).trim()
-                    
-                 // Define the request body for the API call
-                def requestBody = [action: 'recreate']
-
-                 // Call the Portainer API to recreate the container
-                 sh """
-                    curl --request POST \
-                        --url ${portainerApiUrl}/1/docker/containers/${containerName}/json \
-                        --header 'Authorization: Bearer ptr_p15Tx5Mb97bkDE6sO45ATvTCisP9heWE8Hk4PYS2Y/M=' \
-                        --header 'Content-Type: application/json' \
-                        --data '${requestBody}'
-                    """
-                }
-            }
-        
 }
