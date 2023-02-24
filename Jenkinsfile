@@ -28,3 +28,7 @@ node {
         }
     }
 
+    // Recreate the Docker container using Portainer's API
+    
+    
+}
