@@ -33,7 +33,7 @@ node {
 
 
     stage('Recreate container') {
-        steps {
+        
             script {
                 // Retrieve the Portainer API token from the environment variables
                 def portainerApiToken = sh(script: "echo ${PORTAINER_API_TOKEN}", returnStdout: true).trim()
@@ -51,5 +51,5 @@ node {
                     """
                 }
             }
-        }
+        
 }
