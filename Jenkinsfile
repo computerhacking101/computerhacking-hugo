@@ -1,6 +1,6 @@
 node {
     def app
-    def containerName = 'computerhacking101_website'
+    def containerName = 'computerhacking101_new_website'
     def portainerApiUrl = 'https://myportainer.chrisallen.us/api/endpoints'
     def imageName = 'computerhakcing101/computerhacking101website'
 
