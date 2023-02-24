@@ -1,34 +1,29 @@
 node {
-    // Define variables for the Docker application, container name, and image name
     def app
-    def containerName = 'computerhacking101_website'
-    def imageName = 'computerhakcing101/computerhacking101website'
-    def portainerApiUrl = "https://myportainer.chrisallen.us/api/endpoints"
 
-    // Set environment variables using credentials stored in Jenkins
-    environment {
-        PORTAINER_API_TOKEN = credentials('portainer-api-token')
-    }
-
-    // Clone the repository containing the Dockerfile and other necessary files
     stage('Clone repository') {
+        /* Let's make sure we have the repository cloned to our workspace */
+
         checkout scm
     }
 
-    // Build the Docker image using the Dockerfile
     stage('Build image') {
-        app = docker.build(imageName)
+        /* This builds the actual image; synonymous to
+         * docker build on the command line */
+
+        app = docker.build("computerhacking101/computerhacking101website")
     }
 
-    // Push the Docker image to Docker Hub with two tags: the incremental build number and "latest"
+
+
     stage('Push image') {
+        /* Finally, we'll push the image with two tags:
+         * First, the incremental build number from Jenkins
+         * Second, the 'latest' tag.
+         * Pushing multiple tags is cheap, as all the layers are reused. */
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
     }
-
-    // Recreate the Docker container using Portainer's API
-    
-    
 }
