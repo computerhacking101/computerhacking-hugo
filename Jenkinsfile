@@ -1,8 +1,8 @@
 node {
     // Define variables for the Docker application, container name, and image name
     def app
-    def containerName = 'my-container'
-    def imageName = 'my-docker-image'
+    def containerName = 'computerhacking101_website'
+    def imageName = 'computerhakcing101/computerhacking101website'
 
     // Set environment variables using credentials stored in Jenkins
     environment {
