@@ -6,7 +6,8 @@ node {
 
      // Set environment variables using credentials stored in Jenkins
     environment {
-        PORTAINER_API_TOKEN = credentials('portainer-api-token')
+        // PORTAINER_API_TOKEN = credentials('portainer-api-token')
+        PORTAINER_API_TOKEN = credentials('ptr_p15Tx5Mb97bkDE6sO45ATvTCisP9heWE8Hk4PYS2Y/M=')
     }
 
     stage('Clone repository') {
