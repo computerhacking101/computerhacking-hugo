@@ -31,26 +31,25 @@ node {
     }
 
 
-     stages {
-        stage('Recreate container') {
-            steps {
-                script {
-                    // Retrieve the Portainer API token from the environment variables
-                    def portainerApiToken = sh(script: "echo ${PORTAINER_API_TOKEN}", returnStdout: true).trim()
-                    
-                    // Define the request body for the API call
-                    def requestBody = [action: 'recreate']
 
-                    // Call the Portainer API to recreate the container
-                    sh """
-                        curl --request POST \
-                            --url ${portainerApiUrl}/1/docker/containers/${containerName}/json \
-                            --header 'Authorization: Bearer ${portainerApiToken}' \
-                            --header 'Content-Type: application/json' \
-                            --data '${requestBody}'
+    stage('Recreate container') {
+        steps {
+            script {
+                // Retrieve the Portainer API token from the environment variables
+                def portainerApiToken = sh(script: "echo ${PORTAINER_API_TOKEN}", returnStdout: true).trim()
+                    
+                 // Define the request body for the API call
+                def requestBody = [action: 'recreate']
+
+                 // Call the Portainer API to recreate the container
+                 sh """
+                    curl --request POST \
+                        --url ${portainerApiUrl}/1/docker/containers/${containerName}/json \
+                        --header 'Authorization: Bearer ${portainerApiToken}' \
+                        --header 'Content-Type: application/json' \
+                        --data '${requestBody}'
                     """
                 }
             }
         }
-    }
 }
