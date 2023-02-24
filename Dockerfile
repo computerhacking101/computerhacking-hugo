@@ -1,7 +1,7 @@
 ###############
 # Build Stage #
 ###############
-FROM razonyang/hugo as builder
+FROM computerhacking101/docker-hugo as builder
 
 WORKDIR /src
 COPY . /src
@@ -25,7 +25,7 @@ RUN npm install
 RUN npm install -g @fullhuman/postcss-purgecss rtlcss
 
 # Build site
-RUN hugo --minify --gc --enableGitInfo
+RUN hugo --gc --enableGitInfo
 
 # Set the fallback 404 page if defaultContentLanguageInSubdir is enabled, please replace the `en` with your default language code.
 # RUN cp ./public/en/404.html ./public/404.html
