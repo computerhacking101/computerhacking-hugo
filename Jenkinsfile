@@ -35,5 +35,10 @@ node {
             app.push("latest")
         }
     }
+    stage ("submit sitemap to google")
+        sh """
+            curl -X POST "https://www.google.com/ping?sitemap=https://computerhacking101.com/sitemap.xml"
+                 
+        """
 
 }
