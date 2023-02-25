@@ -1,12 +1,12 @@
 node {
-    app
-    containerName = 'computerhacking101_new_website'
-    imageName = 'computerhakcing101/computerhacking101website'
+    def app
+    def containerName = 'computerhacking101_new_website'
+    def imageName = 'computerhakcing101/computerhacking101website'
 
      // Set environment variables using credentials stored in Jenkins
     environment {
-        CLOUDFLARE_API_TOKEN = credentials('cloudflare-api-token')
-        CLOUDFLARE_ZONE_TOKEN = credentials('cloudflare-zone-token-ch101')
+        def CLOUDFLARE_API_TOKEN = credentials('cloudflare-api-token')
+        def CLOUDFLARE_ZONE_TOKEN = credentials('cloudflare-zone-token-ch101')
 
        
     }
