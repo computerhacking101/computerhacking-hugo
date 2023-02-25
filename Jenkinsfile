@@ -40,7 +40,7 @@ node {
             // Retrieve the cloudflare API token from the environment variables
              def cloudflareApiToken = sh(script: "echo ${CLOUDFLARE_API_TOKEN}", returnStdout: true).trim()
             //Retrieve the cloudflare zone for your domain from the environment variables
-            def cloudflareZoneToken = sh(script: "echo ${CLOUDFLARE_ZONE_TOKEN}", returnStdout: true).trim()
+            //def cloudflareZoneToken = sh(script: "echo ${CLOUDFLARE_ZONE_TOKEN}", returnStdout: true).trim()
 
         sh """
             curl -X POST "https://api.cloudflare.com/client/v4/zones/09d7e4e4e1c4c6ca9d00ce90ea561a45/purge_cache" \
