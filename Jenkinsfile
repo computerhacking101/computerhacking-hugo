@@ -31,7 +31,7 @@ node {
     }
 
     stage('Purge Cache') {
-        steps {
+        
             withCredentials([string(credentialsId: 'CLOUDFLARE_ZONE_Id_CH101', variable: 'CF_ZONE_ID'),
                              string(credentialsId: 'CLOUDFLARE_API_TOKEN', variable: 'CF_API_TOKEN')]) {
                 script {
@@ -41,7 +41,7 @@ node {
                          --data '{\"purge_everything\":true}'"
                 }
             }
-        }
+        
     }
     /*
     stage("Submit sitemap to google") {
