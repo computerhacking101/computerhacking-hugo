@@ -43,9 +43,9 @@ node {
     }
         
     }
-    /*
+    
     stage("Submit sitemap to google") {
         sh 'curl -X POST "https://www.google.com/ping?sitemap=https://computerhacking101.com/sitemap.xml"'
     }
-    */
+    
 }
