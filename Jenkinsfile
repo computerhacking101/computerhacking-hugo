@@ -32,20 +32,20 @@ node {
 
     stage('Purge Cache') {
         
-            withCredentials([string(credentialsId: 'CLOUDFLARE_ZONE_Id_CH101', variable: 'CF_ZONE_ID'),
+        withCredentials([string(credentialsId: 'CLOUDFLARE_ZONE_Id_CH101', variable: 'CF_ZONE_ID'),
                              string(credentialsId: 'CLOUDFLARE_API_TOKEN', variable: 'CF_API_TOKEN')]) {
-                script {
-                    sh "curl -X POST \"https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache\" \
-                         -H \"Authorization: Bearer ${CF_API_TOKEN}\" \
-                         -H \"Content-Type: application/json\" \
-                         --data '{\"purge_everything\":true}'"
-                }
+            script {
+                sh "curl -X POST \"https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache\" \
+                    -H \"Authorization: Bearer ${CF_API_TOKEN}\" \
+                    -H \"Content-Type: application/json\" \
+                    --data '{\"purge_everything\":true}'"
             }
+    }
         
     }
-    
+    /*
     stage("Submit sitemap to google") {
         sh 'curl -X POST "https://www.google.com/ping?sitemap=https://computerhacking101.com/sitemap.xml"'
     }
-    
+    */
 }
