@@ -60,8 +60,5 @@ node {
         sh "curl -X POST \"https://www.google.com/ping?sitemap=${sitemapUrl}\""
     }
 
-    // Check if sitemap was successfully submitted to Google
-    stage('Check sitemap submission') {
-        sh "curl -I https://www.google.com/webmasters/tools/sitemap-list?hl=en&siteUrl=https://computerhacking101.com/ | grep -q '200 OK'"
-    }
+
 }
