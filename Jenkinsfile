@@ -1,7 +1,7 @@
 node {
-    def app
-    def containerName = 'computerhacking101_new_website'
-    def imageName = 'computerhakcing101/computerhacking101website'
+    app
+    containerName = 'computerhacking101_new_website'
+    imageName = 'computerhakcing101/computerhacking101website'
 
      // Set environment variables using credentials stored in Jenkins
     environment {
@@ -38,14 +38,14 @@ node {
     }
         stage ("tell cloudflare to dump it cache of your website")
             // Retrieve the cloudflare API token from the environment variables
-             def cloudflareApiToken = sh(script: "echo ${CLOUDFLARE_API_TOKEN}", returnStdout: true).trim()
+            // def cloudflareApiToken = sh(script: "echo ${CLOUDFLARE_API_TOKEN}", returnStdout: true).trim()
             //Retrieve the cloudflare zone for your domain from the environment variables
             //def cloudflareZoneToken = sh(script: "echo ${CLOUDFLARE_ZONE_TOKEN}", returnStdout: true).trim()
 
         sh """
             curl -X POST "https://api.cloudflare.com/client/v4/zones/09d7e4e4e1c4c6ca9d00ce90ea561a45/purge_cache" \
             -H "X-Auth-Email: mcncyo@gmail.com" \
-            -H "X-Auth-Key: ${cloudflareApiToken}" \
+            -H "X-Auth-Key: ${CLOUDFLARE_API_TOKEN}" \
             -H "Content-Type: application/json" \
             --data '{"purge_everything":true}'
             
