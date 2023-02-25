@@ -45,7 +45,7 @@ node {
         sh """
             curl -X POST "https://api.cloudflare.com/client/v4/zones/09d7e4e4e1c4c6ca9d00ce90ea561a45/purge_cache" \
             -H "X-Auth-Email: mcncyo@gmail.com" \
-            -H "X-Auth-Key: ${CLOUDFLARE_API_TOKEN}" \
+            -H "X-Auth-Key: \$(CLOUDFLARE_API_TOKEN)" \
             -H "Content-Type: application/json" \
             --data '{"purge_everything":true}'
             
