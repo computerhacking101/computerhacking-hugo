@@ -54,11 +54,7 @@ node {
         }
     }
 
-    // Check if Cloudflare cache was purged
-    stage('Check cache purge') {
-        sh "curl -I https://computerhacking101.com/index.html | grep CF-Cache-Status | grep -q 'HIT\|MISS'"
-    }
-    
+
     // Submit the sitemap to Google
     stage("Submit sitemap to google") {
         sh "curl -X POST \"https://www.google.com/ping?sitemap=${sitemapUrl}\""
