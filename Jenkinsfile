@@ -6,7 +6,7 @@ node {
      // Set environment variables using credentials stored in Jenkins
     environment {
         CLOUDFLARE_API_TOKEN = credentials('cloudflare-api-token')
-        def CLOUDFLARE_ZONE_TOKEN = credentials('cloudflare-zone-token-ch101')
+       // def CLOUDFLARE_ZONE_TOKEN = credentials('cloudflare-zone-token-ch101')
 
        
     }
@@ -45,16 +45,16 @@ node {
         sh """
             curl -X POST "https://api.cloudflare.com/client/v4/zones/09d7e4e4e1c4c6ca9d00ce90ea561a45/purge_cache" \
             -H "X-Auth-Email: mcncyo@gmail.com" \
-            -H "X-Auth-Key: \$(CLOUDFLARE_API_TOKEN)" \
+            -H "X-Auth-Key: ${CLOUDFLARE_API_TOKEN}" \
             -H "Content-Type: application/json" \
             --data '{"purge_everything":true}'
             
                  
         """
-    stage ("submit sitemap to google")
-        sh """
-            curl -X POST "https://www.google.com/ping?sitemap=https://computerhacking101.com/sitemap.xml"
-                 
-        """
+   // stage ("submit sitemap to google")
+   //     sh """
+    //        curl -X POST "https://www.google.com/ping?sitemap=https://computerhacking101.com/sitemap.xml"
+     //            
+      //  """
 
 }
