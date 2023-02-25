@@ -34,6 +34,12 @@ node {
         }
     }
 
+    // Check if Docker image was pushed to Docker Hub
+    stage('Check push') {
+        sh "docker pull ${imageName}:${env.BUILD_NUMBER}"
+        sh "docker pull ${imageName}:latest"
+    }
+
     // Purge the Cloudflare cache
     stage('Purge Cache') {
         // Make sure to add the required credentials in Jenkins before running this step
@@ -47,10 +53,19 @@ node {
             }
         }
     }
+
+    // Check if Cloudflare cache was purged
+    stage('Check cache purge') {
+        sh "curl -I https://computerhacking101.com/index.html | grep CF-Cache-Status | grep -q 'HIT\|MISS'"
+    }
     
     // Submit the sitemap to Google
     stage("Submit sitemap to google") {
         sh "curl -X POST \"https://www.google.com/ping?sitemap=${sitemapUrl}\""
     }
-    
+
+    // Check if sitemap was successfully submitted to Google
+    stage('Check sitemap submission') {
+        sh "curl -I https://www.google.com/webmasters/tools/sitemap-list?hl=en&siteUrl=https://computerhacking101.com/ | grep -q '200 OK'"
+    }
 }
