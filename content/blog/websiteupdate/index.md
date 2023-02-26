@@ -2,11 +2,11 @@
 ---
 title: "Feb 15, 2023, update"
 url: /blog/feb152023update
-date:  2023-02-15T19:54:29
+date:  2023-02-25T19:54:29
 
 draft: false
 author: "Chris Allen"
-description: "An update about what is going on with the channel and website"
+description: "Learn how to set up your own server and host your website with Cloudflare, Docker, GitHub, and Jenkins. Check out our tutorials and videos for step-by-step instructions. Fixing issues and improving SEO to help you find us easily. Stay tuned for our Syncthing video tutorial."
 
 ---
 
