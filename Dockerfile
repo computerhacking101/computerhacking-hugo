@@ -36,3 +36,4 @@ RUN hugo --gc --enableGitInfo
 FROM nginx
 COPY --from=builder /src/public /app
 COPY deploy/nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY deploy/nginx/nginx.conf /etc/nginx/nginx.conf
