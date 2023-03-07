@@ -41,9 +41,7 @@ palette: red # Default palette. Optional. You'll need to clear the browser cache
 dateFormat: Jan 2, 2006
 
 enableGitInfo: true
-
-# Google Adsense
-googleAdsense: ca-pub-2280055943865437 
+ 
 
 # math: true # Enable math globally.
 # toc: false # Disable TOC globally.
