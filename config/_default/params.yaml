@@ -144,13 +144,13 @@ creativeCommons:
   # nd: true # No derivatives or adaptations of your work are permitted.
   # sa: true # Adaptations must be shared under the same terms.
 
-#utterances:
- # repo: razonyang/hugo-theme-bootstrap-skeleton # Replace with your repository.
-  #issueTerm: pathname # pathname, url, title, og:title
- # label: comment
-  # By default, light and dark mode correspond to github-light and github-dark, respectively.
-  # Optional values: github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
-  #theme:  
+utterances:
+  repo: computerhacking101/computerhacking-hugo # Replace with your repository.
+  issueTerm: url # pathname, url, title, og:title
+  label: comment
+  #By default, light and dark mode correspond to github-light and github-dark, respectively.
+  #Optional values: github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
+  theme: dark  
 
 #staticman:
   #endpoint: https://yourstaticmaninstance # Required, replace with your own Staticman instance.
@@ -218,10 +218,10 @@ search:
 
 # Comment or remove this settings to disable font size switcher.
 fontSize:
-  # extraSmall: .8rem
-  # small: .9rem
-  # large: 1.1rem
-  # extraLarge: 1.2rem
+   extraSmall: .8rem
+   small: .9rem
+   large: 1.1rem
+   extraLarge: 1.2rem
 
 pwa:
   manifest:
