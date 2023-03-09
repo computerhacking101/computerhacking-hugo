@@ -5,7 +5,7 @@ date:  2023-02-25T19:54:29
 
 draft: false
 author: "Chris Allen"
-description: "Learn how to set up your own server and host your website with Cloudflare, Docker, GitHub, and Jenkins. Check out our tutorials and videos for step-by-step instructions. Fixing issues and improving SEO to help you find us easily. Stay tuned for our Syncthing video tutorial."
+description: "Update what is going on with comptuerhacking101.com"
 
 ---
 
