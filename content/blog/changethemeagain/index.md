@@ -5,8 +5,8 @@ url: /blog/change_theme_again
 draft: false
 author: "Chris Allen"
 date: 2023-02-23T12:54:29
+description: Explore the latest theme change on this website! With new features like copy and paste, and a working search function, it's easier to navigate. Plus, deploying the website is effortless with Jenkins site and nginx. Stay tuned for updates on automatic page deployment. 
 ---
+I've decided to switch the theme of my website once again, this time to one that offers more features like copy and paste, as well as a functioning search feature. In order to simplify the deployment process, I've configured my Jenkins site to create a docker container using nginx to host the website. However, I'm still working on automating the deployment process for new pages, as I currently have to manually redeploy it through Portainer and clear the cache on Cloudflare.
 
-I decided to change the theme again.  The theme change adds more features, including copy and paste, and the search feature will work.  I will be making a video on this soon.  I set it up so my Jenkins site will make a docker container containing the website using nginx.  So it is easy to deploy.  I am still working on making it automatically deploy when I add a new page.  I still have to go into Portainer manually, redeploy it, go to Cloudflare, and clear the catch.  
-
-This website has kept me busy, so I still need to finish the youtube videos.  Once I get a few more bugs fixed on this website, I can start making youtube videos again.
+This website has been keeping me busy, but I'm still working on creating Youtube videos. Once I've ironed out some of the remaining bugs on the website, I'll be able to focus more on making new videos.
