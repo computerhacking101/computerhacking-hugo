@@ -7,7 +7,8 @@ author: "Chris Allen"
 date: 2023-02-23T12:54:29
 pinned: true
 pinnedWeight: 100
+Description: Discover the ultimate computing resource with Computer Hacking 101. Our website offers tutorials on a range of topics, including Docker, Windows, file synchronization, and Linux, with complementary YouTube resources. Explore our comprehensive documentation section for an optimized computing experience.
 ---
-Welcome to the Computer Hacking 101 Website.  This website has a lot of information to make your computer work for you.   We have things about docker, windows, syncing your files between devices, Linux, and many other tutorials.  
+Welcome to the Computer Hacking 101 website. Our platform provides a vast array of valuable information to optimize your computing experience. Our extensive selection of tutorials covers topics such as docker, windows, file synchronization across devices, Linux, and much more.
 
-We also have a [youtube channel](https://www.youtube.com/@computerhacking101 "Computer hacking 101 youtube channel") that goes along with the [documents](https://computerhacking101.com/docs "Computer hacking 101 docs") we have here.
+Furthermore, we offer an accompanying YouTube channel, where you can find complementary resources to the documents found on our website, which are accessible through our comprehensive documentation section.

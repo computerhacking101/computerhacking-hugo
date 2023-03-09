@@ -5,10 +5,13 @@ url: /blog/first-blog-post
 date: 2021-09-15T19:54:29
 
 author: "Chris Allen"
+description: Stay up-to-date with the latest in computer hacking and technology by following our blog on Computer Hacking 101. Discover our ongoing projects, updates to our YouTube channel, and valuable insights on how to use Syncthing, all delivered by our team of experts. Subscribe now and never miss a post!
 
 ---
-Welcome to my first blog post on Computer Hacking 101 website.  The blogs are going to be telling you what we are working on and trying to get done with the youtube channel and this website. First, we just replace WordPress with Hugo for this site and my personal website located at <https://chrisallen.us>.    I am using Hugo for this website because it is a more modern and powerful website builder.  We haven't got the final design of the website done yet so you might see changes to the website for a while.  
+Greetings and welcome to the inaugural post on the Computer Hacking 101 website. In this blog, we aim to keep you informed about our ongoing projects and updates to our YouTube channel and website.
 
-I am hoping to get the next video about syncthing which is titled "How to use Syncthing" in a couple of weeks. I also got a 1u server case I am going to move my Promox server into.  I am planning on doing a video on that also.
+As part of our efforts to enhance the website's functionality, we have transitioned from WordPress to Hugo, a contemporary and robust website builder. As we continue to refine the website's design, some changes may occur over time.
 
-The videos will come out slowly because I have a full-time job right now.  I also have to spend some time with my family and friends.  
+We are pleased to announce that we have an upcoming video titled "How to Use Syncthing" scheduled for release in the next few weeks. Additionally, we have recently acquired a 1u server case that we will be transferring our Promox server to, which will be the subject of a future video.
+
+Please note that due to our team's work commitments and personal obligations, video releases may be infrequent. However, we are committed to delivering high-quality content, and we appreciate your patience and understanding.
