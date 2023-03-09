@@ -1,5 +1,5 @@
 ---
-title: "Syncthing"
+title: "Github"
 image: ""
 date:
     - date
@@ -12,7 +12,7 @@ lastmod:
  - publishDate
 draft: false
 aliases:
-- "/tags/syncthing"
+
 ---
 
-All of my docs we have about syncthing.
+All of my docs we have about github
