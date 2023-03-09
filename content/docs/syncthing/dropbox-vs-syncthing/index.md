@@ -8,7 +8,7 @@ date: 2022-01-16T19:54:29
 lastmod: 2023-02-22T19:54:29
 categories: ["dropbox", "syncthing"]
 
-description: "Should you choose dropbox vs syncthing?  We will walk through the the differnce betweeen them."
+description: "Compare Dropbox and Syncthing on our site to find the ideal file sync tool for you. Discover which has better security, privacy, and pricing. Choose the best solution." 
 aliases:
 ---
 

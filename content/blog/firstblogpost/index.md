@@ -5,7 +5,7 @@ url: /blog/first-blog-post
 date: 2021-09-15T19:54:29
 
 author: "Chris Allen"
-description: Stay up-to-date with the latest in computer hacking and technology by following our blog on Computer Hacking 101. Discover our ongoing projects, updates to our YouTube channel, and valuable insights on how to use Syncthing, all delivered by our team of experts. Subscribe now and never miss a post!
+description: "Stay up-to-date with the latest in computer hacking and technology by following our blog on Computer Hacking 101. Discover our ongoing projects, updates to our YouTube channel, and valuable insights on how to use Syncthing, all delivered by our team of experts. Subscribe now and never miss a post!"
 
 ---
 Greetings and welcome to the inaugural post on the Computer Hacking 101 website. In this blog, we aim to keep you informed about our ongoing projects and updates to our YouTube channel and website.
