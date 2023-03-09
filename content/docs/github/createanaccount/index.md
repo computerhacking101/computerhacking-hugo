@@ -40,36 +40,36 @@ SSH keys allow you to securely authenticate with GitHub without having to enter 
 Generate an SSH key pair on your local machine using the following command in your terminal:
 
 ``` bash
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 When prompted, save the key pair to the default location by pressing "Enter."
 Add the SSH key to your GitHub account by following these steps:
 
-    1. Log in to your GitHub account and click on your profile picture in the top-right corner of the page.
-    2. Click on "Settings" in the dropdown menu.
-    3. Click on "SSH and GPG keys" in the left-hand sidebar.
-    4.  Click on "New SSH key."
-    5. Give the key a descriptive title and paste the contents of the public key file into the "Key" field.
-    6. Click "Add SSH key."
+1. Log in to your GitHub account and click on your profile picture in the top-right corner of the page.
+2. Click on "Settings" in the dropdown menu.
+3. Click on "SSH and GPG keys" in the left-hand sidebar.
+4. Click on "New SSH key."
+5. Give the key a descriptive title and paste the contents of the public key file into the "Key" field.
+6. Click "Add SSH key."
 
 Test the SSH key by running the following command in your terminal:
 
 ``` bash
-ssh -T git@github.com
+    ssh -T git@github.com
 ```
 
 ## Review and Manage Your Authorized Applications
 
 GitHub allows you to authorize third-party applications to access your account, such as continuous integration services or code analysis tools. It's important to regularly review these authorized applications and revoke access for any that you no longer use or trust. To manage your authorized applications on GitHub, follow these steps:
 
-    Log in to your GitHub account and click on your profile picture in the top-right corner of the page.
+1. Log in to your GitHub account and click on your profile picture in the top-right corner of the page.
 
-    Click on "Settings" in the dropdown menu.
+2. Click on "Settings" in the dropdown menu.
 
-    Click on "Applications" in the left-hand sidebar.
+3. Click on "Applications" in the left-hand sidebar.
 
-    Review the list of authorized applications and revoke access for any that you no longer use or trust.
+4. Review the list of authorized applications and revoke access for any that you no longer use or trust.
 
 ## Use Strong Permissions and Access Controls
 
@@ -91,7 +91,7 @@ If you are working on a project with others, make sure to use strong permissions
 
 GitHub regularly publishes security advisories for vulnerabilities that affect its platform. It's important to stay up-to-date on these advisories and take any recommended actions to secure your account and repositories. To view security advisories on GitHub, follow these steps:
 
-Visit the GitHub Security Advisory page at https://github.com/advisories.
+Visit the GitHub Security Advisory page at <https://github.com/advisories>.
 
 Review the list of advisories and take any recommended actions to secure your account and repositories.
 
